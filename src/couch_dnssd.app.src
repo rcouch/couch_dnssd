@@ -1,0 +1,24 @@
+{application, couch_dnssd,
+ [
+  {description, "Couch DNSSD"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  lager,
+                  crypto,
+                  public_key,
+                  sasl,
+                  ssl,
+                  inets,
+                  oauth,
+                  ibrowse,
+                  ranch,
+                  couch,
+                  couch_httpd,
+                  dnssd
+                 ]},
+  {mod, { couch_dnssd_app, []}},
+  {env, []}
+ ]}.
